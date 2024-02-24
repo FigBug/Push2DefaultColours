@@ -162,6 +162,8 @@ void MainComponent::paint (juce::Graphics& g)
         
         g.setColour (colours[i].contrasting());
         g.drawText (juce::String::formatted ("0x%.2X", i), x, y, w, h, juce::Justification::centred);
+        
+        //g.drawText (juce::String::formatted ("0x%.2X %d", i, juce::roundToInt (colours[i].getHue() * 18) + 1), x, y, w, h, juce::Justification::centred);
     }
 }
 
